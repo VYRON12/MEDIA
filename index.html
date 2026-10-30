@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>VYRON AI & Digital Studio | استوديو إنتاج فيديوهات الذكاء الاصطناعي والميديا</title>
+  <meta name="description" content="إنت عليك الفكرة.. وإحنا علينا نخليها فيلم! استوديو VYRON الرائد في صناعة فيديوهات الذكاء الاصطناعي بجودة 4K، المونتاج السينمائي، وإدارة السوشيال ميديا والتسويق لبراندك.">
+  <meta name="keywords" content="ذكاء اصطناعي, فيديوهات AI, مونتاج, تصميم فيديو, صناعة المحتوى, تسويق إلكتروني, Vyron, استوديو رقمي, إدارة سوشيال ميديا">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VYRON AI & Digital Studio | إنت عليك الفكرة وإحنا علينا نخليها فيلم!">
+  <meta property="og:description" content="حوّل فكرتك لفيديو احترافي سينمائي بجودة 4K مع استوديو VYRON. باقات تبدأ من 250 جنيه للدقيقة مع ضمان معاينة قبل التسليم.">
+  <meta property="og:image" content="assets/vyron-logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xs': '375px',
+          },
+          colors: {
+            brandDark: '#07090e',
+            brandSurface: '#0d1424',
+            brandCard: 'rgba(15, 23, 42, 0.75)',
+            brandGold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309'
+            },
+            brandCyan: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2'
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            readex: ['Readex Pro', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cairo & Readex Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brandDark text-slate-100 cyber-grid relative font-cairo antialiased selection:bg-amber-500 selection:text-black">
+
+  <!-- Ambient Glows (Responsive) -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- =========================================================================
+       Top Notification Announcement Bar (Responsive)
+       ========================================================================= -->
+  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 text-xs sm:text-sm font-bold py-2 px-3 sm:px-4 text-center tracking-wide shadow-md flex items-center justify-center gap-2">
+    <span class="inline-block animate-bounce text-sm">🔥</span>
+    <span>عروض خاصة لفترة محدودة على فيديوهات الـ 4K والسوشيال ميديا!</span>
+    <span class="hidden sm:inline">|</span>
+    <a href="#calculator" class="underline hover:text-black transition inline-block">احسب التكلفة الآن ←</a>
+  </div>
+
+  <!-- =========================================================================
+       Sticky Navigation Header (Mobile-Friendly)
+       ========================================================================= -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
+        <div class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-amber-500/80 p-0.5 gold-glow transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
+          <img src="assets/vyron-logo.jpg" alt="VYRON Studio Logo" class="w-full h-full object-cover rounded-full">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl sm:text-2xl font-black tracking-wider text-gradient-gold leading-none">VYRON</span>
+          <span class="text-[9px] sm:text-[10px] tracking-widest text-cyan-400 font-readex uppercase mt-1">AI & Digital Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-slate-300">
+        <a href="#about" class="hover:text-amber-400 transition-colors">عن الاستوديو</a>
+        <a href="#services" class="hover:text-amber-400 transition-colors">خدماتنا</a>
+        <a href="#pricing" class="hover:text-amber-400 transition-colors">باقات الأسعار</a>
+        <a href="#calculator" class="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-calculator text-xs"></i>
+          <span>حاسبة الأسعار</span>
+        </a>
+        <a href="#showcase" class="hover:text-amber-400 transition-colors">معرض الأعمال</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">الأسئلة الشائعة</a>
+      </nav>
+
+      <!-- Header CTAs (Desktop / Tablet) -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Facebook Page Link -->
+        <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" rel="noopener noreferrer" 
+           class="w-10 h-10 rounded-xl bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 flex items-center justify-center transition-all duration-300" 
+           title="صفحتنا على فيسبوك">
+          <i class="fa-brands fa-facebook-f text-base"></i>
+        </a>
+
+        <!-- Direct WhatsApp CTA -->
+        <a href="https://wa.me/201098021457?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%A3%D9%85%D9%8A%D8%B1%20%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D8%A9" 
+           target="_blank" rel="noopener noreferrer"
+           class="btn-shimmer px-4 lg:px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg gold-glow hover:scale-105 transition-transform duration-300">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>تواصل واتساب</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" aria-label="فتح القائمة" class="md:hidden text-slate-200 hover:text-amber-400 p-2 text-2xl focus:outline-none rounded-lg">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Menu (Slide-out) -->
+    <div id="mobile-menu" class="hidden md:hidden glass-panel border-b border-white/10 px-5 py-6 space-y-3.5 animate-fadeIn">
+      <a href="#about" class="mobile-nav-link block text-slate-200 hover:text-amber-400 font-semibold py-1.5 text-base">عن الاستوديو</a>
+      <a href="#services" class="mobile-nav-link block text-slate-200 hover:text-amber-400 font-semibold py-1.5 text-base">خدماتنا</a>
+      <a href="#pricing" class="mobile-nav-link block text-slate-200 hover:text-amber-400 font-semibold py-1.5 text-base">باقات الأسعار</a>
+      <a href="#calculator" class="mobile-nav-link block text-amber-400 hover:text-amber-300 font-semibold py-1.5 text-base flex items-center gap-2">
+        <i class="fa-solid fa-calculator text-sm"></i>
+        <span>حاسبة تكلفة الفيديو</span>
+      </a>
+      <a href="#showcase" class="mobile-nav-link block text-slate-200 hover:text-amber-400 font-semibold py-1.5 text-base">معرض الأعمال والبوسترات</a>
+      <a href="#faq" class="mobile-nav-link block text-slate-200 hover:text-amber-400 font-semibold py-1.5 text-base">الأسئلة الشائعة</a>
+      
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-2.5">
+        <a href="https://wa.me/201098021457" target="_blank" class="w-full text-center py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-bold rounded-xl flex items-center justify-center gap-2 shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>محادثة واتساب: 01098021457</span>
+        </a>
+        <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" class="w-full text-center py-2.5 bg-blue-600/20 border border-blue-500/40 text-blue-400 font-bold rounded-xl flex items-center justify-center gap-2">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>الصفحة الرسمية على الفيسبوك</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section (Optimized for 320px - 4K)
+       ========================================================================= -->
+  <section id="hero" class="relative pt-8 pb-16 sm:pt-14 sm:pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Text & Pitch -->
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-right">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full glass-panel-gold border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold badge-pulse max-w-full">
+            <span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-amber-400 animate-ping flex-shrink-0"></span>
+            <span class="truncate">استوديو VYRON الرقمي • الجيل القادم من الإبداع</span>
+            <i class="fa-solid fa-sparkles text-amber-400 flex-shrink-0"></i>
+          </div>
+
+          <!-- Main Catchy Slogan -->
+          <h1 class="hero-heading text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-black leading-snug sm:leading-tight tracking-tight">
+            🎬 إنت عليك الفكرة..<br>
+            <span class="text-gradient-gold">وإحنا علينا نخليها فيلم!</span>
+          </h1>
+
+          <!-- User's Words / Pitch -->
+          <p class="text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            عندك منتج أو مشروع وعايز تعرضه بشكل احترافي؟ أو بتصنع محتوى وعايز فيديوهاتك تبقى أقوى وتشد انتباه الجمهور؟ 👀
+            <br class="hidden sm:inline">
+            مع <span class="text-amber-400 font-bold">VYRON</span>، بنساعدك تحوّل فكرتك لفيديو احترافي سينمائي بدقة <span class="text-cyan-400 font-bold">4K</span> يليق بشغلك ويظهره بأفضل صورة تضاعف مبيعاتك وتجذب المتابعين.
+          </p>
+
+          <!-- Key Guarantee Pill from Poster -->
+          <div class="p-3.5 sm:p-4 rounded-2xl glass-panel-cyan border border-cyan-500/30 text-right flex items-start sm:items-center gap-3 sm:gap-3.5 max-w-xl mx-auto lg:mx-0 shadow-lg">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex-shrink-0 flex items-center justify-center text-base sm:text-lg">
+              <i class="fa-solid fa-shield-check"></i>
+            </div>
+            <div class="text-xs sm:text-sm">
+              <strong class="text-cyan-300 block font-bold text-xs sm:text-sm">والأهم؟ ضمان الرضا التام قبل الاستلام! ✅</strong>
+              <span class="text-slate-300 text-[11px] sm:text-xs">هتشوف جزء من الفيديو الأول، ولو محتاج أي تعديل نتفق عليه قبل التسليم النهائي.</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Responsive Grid on Mobile) -->
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto lg:mx-0">
+            <!-- WhatsApp Main CTA with smart prefilled text -->
+            <a href="https://wa.me/201098021457?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%A3%D9%85%D9%8A%D8%B1%20%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%81%D9%83%D8%B1%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%88%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%AD%D9%88%D9%84%D9%87%D8%A7%20%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%20%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%85%D8%B9%D8%A7%D9%83%D9%85%20%D9%81%D9%8A%20VYRON." 
+               target="_blank" rel="noopener noreferrer"
+               class="btn-shimmer w-full sm:w-auto py-3.5 sm:py-4 px-6 sm:px-8 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-3 shadow-xl gold-glow hover:scale-105 transition-transform duration-300">
+              <i class="fa-brands fa-whatsapp text-xl text-emerald-950"></i>
+              <span>ابعتلنا فكرتك الآن (واتساب)</span>
+            </a>
+
+            <!-- Scroll to Pricing -->
+            <a href="#pricing" 
+               class="w-full sm:w-auto py-3.5 sm:py-4 px-5 sm:px-6 rounded-2xl glass-panel hover:bg-white/10 text-white font-bold text-xs sm:text-sm border border-white/20 hover:border-amber-400/50 flex items-center justify-center gap-2 transition-all duration-300 text-center">
+              <i class="fa-solid fa-tags text-amber-400"></i>
+              <span>استكشف الباقات والأسعار</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Highlights (Responsive Columns) -->
+          <div class="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center">
+            <div class="p-1 sm:p-2">
+              <div class="stat-number text-base xs:text-lg sm:text-2xl font-black text-amber-400">4K Ultra HD</div>
+              <div class="stat-label text-[10px] sm:text-xs text-slate-400 mt-0.5 sm:mt-1">جودة تصدير سينمائية</div>
+            </div>
+            <div class="p-1 sm:p-2 border-x border-white/10">
+              <div class="stat-number text-base xs:text-lg sm:text-2xl font-black text-cyan-400">250 ج/د</div>
+              <div class="stat-label text-[10px] sm:text-xs text-slate-400 mt-0.5 sm:mt-1">أسعار تبدأ للمونتاج</div>
+            </div>
+            <div class="p-1 sm:p-2">
+              <div class="stat-number text-base xs:text-lg sm:text-2xl font-black text-emerald-400">100%</div>
+              <div class="stat-label text-[10px] sm:text-xs text-slate-400 mt-0.5 sm:mt-1">معاينة قبل التسليم</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual Showcase / Dynamic 3D Card -->
+        <div class="lg:col-span-5 relative flex justify-center mt-4 lg:mt-0">
+          
+          <!-- Outer Glowing Frame -->
+          <div class="relative w-full max-w-xs sm:max-w-md">
+            
+            <!-- Floating Decorative Badges -->
+            <div class="absolute -top-3 right-1 sm:-top-4 sm:-right-4 z-20 glass-panel-gold px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl border border-amber-500/50 shadow-xl animate-float flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs font-bold text-amber-300">
+              <i class="fa-solid fa-crown text-amber-400"></i>
+              <span>باقة بريميوم 4K</span>
+            </div>
+
+            <div class="absolute -bottom-3 left-1 sm:-bottom-5 sm:-left-4 z-20 glass-panel-cyan px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl border border-cyan-500/50 shadow-xl animate-float-delayed flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs font-bold text-cyan-300">
+              <i class="fa-solid fa-bolt text-cyan-400"></i>
+              <span>هوك ومؤثرات صوتية VIP</span>
+            </div>
+
+            <!-- Central Visual Mockup -->
+            <div class="rounded-3xl overflow-hidden glass-panel border border-white/20 shadow-2xl p-2.5 sm:p-3 relative group">
+              
+              <!-- Video / Poster Preview Container -->
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-950 cursor-pointer" 
+                   data-lightbox-src="assets/poster-4k-video.jpg"
+                   data-lightbox-caption="بوستر VYRON الرسمي - تحويل الأفكار إلى فيديوهات احترافية 4K">
+                <img src="assets/poster-4k-video.jpg" alt="VYRON AI Video 4K Poster" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="eager">
+                
+                <!-- Overlay Gradient & Play Button Simulation -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 sm:p-6">
+                  
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="inline-block px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] sm:text-[11px] font-black uppercase mb-1">Your Idea, Our Video</span>
+                      <h4 class="text-base sm:text-lg font-black text-white">إعلان براندك أو فيلم قصتك</h4>
+                      <p class="text-[11px] sm:text-xs text-slate-300">اضغط لتكبير البوستر بجودة فائقة</p>
+                    </div>
+
+                    <!-- Glowing Simulated Expand Icon -->
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500 text-black flex items-center justify-center text-base sm:text-lg shadow-lg gold-glow group-hover:scale-110 transition-transform flex-shrink-0">
+                      <i class="fa-solid fa-expand"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Bottom Bar inside Card -->
+              <div class="mt-2.5 sm:mt-3 px-2 sm:px-3 py-1.5 sm:py-2 flex items-center justify-between text-[11px] sm:text-xs text-slate-300 border-t border-white/5">
+                <span class="flex items-center gap-1.5 text-cyan-400">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>تأثيرات بصرية + صوتية</span>
+                </span>
+                <span class="text-amber-400 font-bold">VYRON AI Studio</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Social Media & Multi-Platform Banner (Responsive)
+       ========================================================================= -->
+  <section class="py-6 sm:py-8 bg-slate-900/50 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-between gap-4 sm:gap-6 text-center sm:text-right">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-xs sm:text-base">فيديوهات مصممة خصيصاً لكل منصات السوشيال ميديا</h3>
+            <p class="text-[11px] sm:text-xs text-slate-400">ريلز إنستجرام، تيك توك، فيسبوك، يوتيوب شورتس، وإعلانات Google</p>
+          </div>
+        </div>
+
+        <!-- Social Icons Grid -->
+        <div class="flex items-center gap-4 sm:gap-5 text-xl sm:text-2xl text-slate-400">
+          <span class="hover:text-pink-500 transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></span>
+          <span class="hover:text-cyan-400 transition-colors" title="TikTok"><i class="fa-brands fa-tiktok"></i></span>
+          <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" class="hover:text-blue-500 transition-colors" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <span class="hover:text-red-500 transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></span>
+          <span class="hover:text-blue-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></span>
+          <a href="https://wa.me/201098021457" target="_blank" class="hover:text-emerald-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Pricing Packages Section (باقات الأسعار المعتمدة)
+       ========================================================================= -->
+  <section id="pricing" class="py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+        <span class="px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 border border-amber-400/20 inline-block">
+          🔥 اختار الباقة المناسبة ليك
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white">
+          باقات إنتاج الفيديو <span class="text-gradient-gold">والمونتاج الاحترافي</span>
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
+          سواء بتسوّق لمنتج، أو بتبني براند، أو عايز تطوّر محتواك على السوشيال ميديا، خلّي كل تفصيلة في الفيديو تخدم فكرتك وتظهر شغلك بشكل يليق بيك!
+        </p>
+      </div>
+
+      <!-- Pricing Cards Grid (Responsive Mobile) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+        
+        <!-- Package 1: الباقة الاحترافية -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-amber-400/40 transition-all duration-300 flex flex-col justify-between relative group hover:shadow-2xl">
+          
+          <div>
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+                🎥 باقة المونتاج الأساسية
+              </span>
+              <span class="text-slate-400 text-xs sm:text-sm font-readex">Professional</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2">الباقة الاحترافية</h3>
+            <p class="text-xs text-slate-400 mb-5">مونتاج احترافي لفيديوك، بما يناسب طبيعة المحتوى وفكرتك لعرض منتجك بأناقة.</p>
+
+            <!-- Price -->
+            <div class="mb-6 p-4 rounded-2xl bg-white/5 border border-white/5">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xs sm:text-sm text-slate-400">تبدأ من</span>
+                <span class="text-3xl sm:text-4xl font-black text-amber-400">250</span>
+                <span class="text-slate-300 font-bold text-xs sm:text-sm">جنيه / للدقيقة</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mt-1">تحديد المدة حسب سكريبت الفكرة وحجم المشاهد</div>
+            </div>
+
+            <!-- Features List -->
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-200 mb-6 sm:mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>مونتاج احترافي مخصص لفكرتك وطبيعة مشروعك</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>توليد وتنسيق المشاهد بمساعدة الذكاء الاصطناعي</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>كتابة نصوص وترجمة احترافية على الفيديو (Subtitles)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>موسيقى خلفية متناسقة خالية من حقوق الملكية</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>تعديل وضبط ألوان المشاهد (Color Grading)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="text-emerald-300 font-semibold">ميزة المعاينة قبل التسليم النهائي</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Order Button -->
+          <button data-package-order="pro" 
+                  class="w-full py-3.5 px-4 rounded-xl bg-white/10 hover:bg-amber-500 hover:text-black text-white font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500 shadow">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>طلب الباقة الاحترافية (250 ج)</span>
+          </button>
+
+        </div>
+
+        <!-- Package 2: باقة PREMIUM (Highlighted / Most Popular) -->
+        <div class="glass-panel-gold rounded-3xl p-6 sm:p-8 border-2 border-amber-500/80 transition-all duration-300 flex flex-col justify-between relative group shadow-2xl gold-glow lg:-translate-y-3">
+          
+          <!-- Top Badge -->
+          <div class="absolute -top-3.5 right-1/2 translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-400 text-black font-black text-[11px] sm:text-xs px-4 sm:px-5 py-1 rounded-full shadow-lg flex items-center gap-1.5 uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-crown text-slate-900 text-xs"></i>
+            <span>الأكثر طلباً • باقة النخبة 4K</span>
+          </div>
+
+          <div>
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-4 mt-1 sm:mt-2">
+              <span class="text-xs font-bold text-amber-400 bg-amber-400/20 px-3 py-1 rounded-full border border-amber-400/40">
+                👑 باقة VIP المتكاملة
+              </span>
+              <span class="text-amber-300 text-xs sm:text-sm font-readex font-bold">PREMIUM</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-black text-white mb-2">باقة PREMIUM</h3>
+            <p class="text-xs text-amber-200/80 mb-5">لو عايز فيديو بمستوى أعلى من الاحترافية والجاذبية اللي تخطف الزبون من أول ثانية.</p>
+
+            <!-- Price -->
+            <div class="mb-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl sm:text-4xl font-black text-amber-300">500</span>
+                <span class="text-slate-200 font-bold text-xs sm:text-sm">جنيه / للدقيقة</span>
+              </div>
+              <div class="text-[11px] text-amber-200/80 mt-1">شاملة كافة المؤثرات البصرية والصوتية والهوك الاحترافي</div>
+            </div>
+
+            <!-- Features List -->
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-100 mb-6 sm:mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="font-bold text-white">مونتاج سينمائي مخصص 100% لفكرتك وهويتك</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="font-bold text-amber-300">جودة تصدير فائقة الدقة 4K Ultra HD</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>تأثيرات بصرية (Video Effects) تعطي طابعاً فريداً</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>مؤثرات صوتية احترافية (SFX) تدي الفيديو إحساس سينمائي</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="font-semibold text-cyan-300">مقدمة جذابة (Catchy Hook) تشد المشاهد</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-amber-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>خاتمة احترافية (Outro) باسم المنتج واللوجو</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check-double text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="text-emerald-300 font-bold">معاينة جزء من الفيديو قبل التسليم النهائي</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Order Button -->
+          <button data-package-order="premium" 
+                  class="btn-shimmer w-full py-4 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-xl gold-glow hover:scale-105 transition-transform duration-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>حجز باقة PREMIUM (500 ج)</span>
+          </button>
+
+        </div>
+
+        <!-- Package 3: باقة السوشيال ميديا والتسويق -->
+        <div class="glass-panel-cyan rounded-3xl p-6 sm:p-8 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 flex flex-col justify-between relative group hover:shadow-2xl">
+          
+          <div>
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-cyan-400 bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/30">
+                🚀 باقة النمو الرقمي
+              </span>
+              <span class="text-cyan-300 text-xs sm:text-sm font-readex">Social Growth</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2">خليك رقم 1 على السوشيال</h3>
+            <p class="text-xs text-slate-300 mb-5">إدارة حساباتك، زيادة المتابعين والتفاعل، وبناء براند قوي يعرض شغلك باحترافية.</p>
+
+            <!-- Price -->
+            <div class="mb-6 p-4 rounded-2xl bg-cyan-500/10 border border-cyan-500/20">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xs sm:text-sm text-cyan-300">باقات مخصصة</span>
+                <span class="text-2xl sm:text-3xl font-black text-cyan-400">شهرياً</span>
+                <span class="text-slate-300 font-bold text-xs">حسب أهدافك</span>
+              </div>
+              <div class="text-[11px] text-cyan-200/80 mt-1">تحديد عدد الفيديوهات الشهرية والحملات حسب طلبك</div>
+            </div>
+
+            <!-- Features List -->
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-200 mb-6 sm:mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>فيديوهات إعلانية احترافية دورية بالذكاء الاصطناعي</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>إدارة حساباتك ومحتواك على السوشيال ميديا بأسعار تنافسية</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>تحسين ظهورك على محرك البحث Google</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>بناء هوية بصرية وبراند متكامل يعبر عن فخامة مشروعك</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span>إنشاء موقع إلكتروني يعرض شغلك ويقوي ثقة عملائك</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
+                <span class="text-emerald-300 font-semibold">استشارات تسويقية مستمرة وخطة نمو</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Order Button -->
+          <button data-package-order="social" 
+                  class="w-full py-3.5 px-4 rounded-xl bg-cyan-500/20 hover:bg-cyan-500 hover:text-black text-cyan-300 font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-2 border border-cyan-500/40 shadow">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>استفسار عن خطة السوشيال ميديا</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Extra Note on Discounts (Mobile-Friendly) -->
+      <div class="mt-8 sm:mt-12 text-center">
+        <div class="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-3 p-4 sm:px-6 sm:py-3 rounded-2xl glass-panel border border-amber-400/30 text-slate-200 text-xs sm:text-sm max-w-full">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-tag text-amber-400 text-base sm:text-lg flex-shrink-0"></i>
+            <span><strong>متنساش تسأل عن العروض المتاحة!</strong> خصومات خاصة لحزم الفيديوهات.</span>
+          </div>
+          <a href="https://wa.me/201098021457?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%AD%D8%AF%D8%AB%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B6%20%D9%88%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D8%A9%20%D8%AD%D8%A7%D9%84%D9%8A%D8%A7%D9%8B%20%D9%81%D9%8A%20VYRON." 
+             target="_blank" class="text-amber-400 font-bold underline hover:text-amber-300">
+            اسأل عن العرض الآن ←
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Interactive Video Cost Calculator (Responsive Touch UI)
+       ========================================================================= -->
+  <section id="calculator" class="py-14 sm:py-20 relative bg-slate-950/60 border-y border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12 space-y-2.5 sm:space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/20 inline-block">
+          🧮 شفافية كاملة في التسعير
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          حاسبة تكلفة الفيديو <span class="text-gradient-gold">التفاعلية</span>
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm">
+          حدد مواصفات الفيديو المطلوب واعرف السعر التقديري فوراً، واطلب التنفيذ بضغطة زر واحدة عبر واتساب!
+        </p>
+      </div>
+
+      <!-- Calculator Box -->
+      <div class="glass-panel rounded-3xl p-5 sm:p-10 border border-white/15 shadow-2xl relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Controls Column -->
+          <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-right">
+            
+            <!-- Step 1: Package Choice (1 col on mobile, 2 cols on tablet+) -->
+            <div>
+              <label class="block text-xs sm:text-sm font-bold text-slate-200 mb-2.5">1. اختار نوع الباقة المناسبة:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                <label class="cursor-pointer">
+                  <input type="radio" name="calc-package" id="calc-package-pro" value="250" class="peer hidden" checked>
+                  <div class="p-3 sm:p-3.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-amber-400 peer-checked:bg-amber-400/10 transition-all text-center">
+                    <span class="block font-bold text-white text-xs sm:text-sm">الباقة الاحترافية</span>
+                    <span class="text-xs text-amber-400 font-bold">250 ج.م / دقيقة</span>
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input type="radio" name="calc-package" id="calc-package-premium" value="500" class="peer hidden">
+                  <div class="p-3 sm:p-3.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-amber-400 peer-checked:bg-amber-400/10 transition-all text-center">
+                    <span class="block font-bold text-white text-xs sm:text-sm">👑 باقة PREMIUM</span>
+                    <span class="text-xs text-amber-400 font-bold">500 ج.م / دقيقة (4K + مؤثرات)</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Duration Slider -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="text-xs sm:text-sm font-bold text-slate-200">2. حدد مدة الفيديو المطلوبة:</label>
+                <span id="calc-duration-value" class="text-xs sm:text-sm font-black text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-lg border border-amber-400/30">
+                  دقيقة واحدة
+                </span>
+              </div>
+              <input type="range" id="calc-duration-slider" min="1" max="10" value="1" step="1" class="w-full">
+              <div class="flex justify-between text-[10px] sm:text-[11px] text-slate-400 mt-2">
+                <span>1 دقيقة (Reel سريع)</span>
+                <span>5 دقائق</span>
+                <span>10 دقائق (فيلم / قصة)</span>
+              </div>
+            </div>
+
+            <!-- Step 3: Add-ons -->
+            <div>
+              <label class="block text-xs sm:text-sm font-bold text-slate-200 mb-2.5">3. إضافات اختيارية لتعزيز قوة الفيديو:</label>
+              <div class="space-y-2 sm:space-y-2.5">
+                
+                <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 cursor-pointer transition">
+                  <div class="flex items-center gap-2.5 sm:gap-3">
+                    <input type="checkbox" id="calc-addon-script" class="w-4 h-4 rounded text-amber-500 bg-slate-800 border-slate-600 focus:ring-0">
+                    <span class="text-xs sm:text-sm text-slate-300">كتابة سكريبت سينمائي وإعلاني احترافي</span>
+                  </div>
+                  <span class="text-xs text-amber-400 font-bold whitespace-nowrap">+100 ج</span>
+                </label>
+
+                <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 cursor-pointer transition">
+                  <div class="flex items-center gap-2.5 sm:gap-3">
+                    <input type="checkbox" id="calc-addon-voice" class="w-4 h-4 rounded text-amber-500 bg-slate-800 border-slate-600 focus:ring-0">
+                    <span class="text-xs sm:text-sm text-slate-300">تعليق صوتي AI واقعي فائق الوضوح</span>
+                  </div>
+                  <span class="text-xs text-amber-400 font-bold whitespace-nowrap">+150 ج</span>
+                </label>
+
+                <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 cursor-pointer transition">
+                  <div class="flex items-center gap-2.5 sm:gap-3">
+                    <input type="checkbox" id="calc-addon-fast" class="w-4 h-4 rounded text-amber-500 bg-slate-800 border-slate-600 focus:ring-0">
+                    <span class="text-xs sm:text-sm text-slate-300">تسليم فائق السرعة خلال 24 - 48 ساعة</span>
+                  </div>
+                  <span class="text-xs text-amber-400 font-bold whitespace-nowrap">+200 ج</span>
+                </label>
+
+                <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 cursor-pointer transition">
+                  <div class="flex items-center gap-2.5 sm:gap-3">
+                    <input type="checkbox" id="calc-addon-thumb" class="w-4 h-4 rounded text-amber-500 bg-slate-800 border-slate-600 focus:ring-0" checked>
+                    <span class="text-xs sm:text-sm text-slate-300">تصميم بوستر وغلاف (Thumbnail)</span>
+                  </div>
+                  <span class="text-xs text-emerald-400 font-bold whitespace-nowrap">مجاناً</span>
+                </label>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Total & Result Column -->
+          <div class="lg:col-span-5">
+            <div class="p-5 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/30 text-center space-y-5 sm:space-y-6 gold-glow relative">
+              
+              <div class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-widest font-readex">تقدير التكلفة الإجمالية</div>
+              
+              <!-- Total Amount -->
+              <div>
+                <div id="calc-total-price" class="text-4xl sm:text-5xl font-black text-gradient-gold">
+                  250 ج.م
+                </div>
+                <div class="text-[11px] sm:text-xs text-slate-400 mt-1">السعر يشمل المونتاج والتنسيق والمعاينة</div>
+              </div>
+
+              <!-- Base Subtotal & Discount Row -->
+              <div class="space-y-1.5 pt-3 border-t border-white/10 text-xs">
+                <div class="flex justify-between text-slate-400">
+                  <span>المجموع الأولي:</span>
+                  <span id="calc-base-price">250 ج.م</span>
+                </div>
+                <div id="calc-discount-row" class="hidden flex justify-between text-emerald-400 font-bold">
+                  <span>خصم الباقات:</span>
+                  <span id="calc-discount-val">-0 ج.م</span>
+                </div>
+              </div>
+
+              <!-- Highlights inside box -->
+              <div class="bg-white/5 rounded-xl p-3 text-[11px] sm:text-xs text-slate-300 space-y-1.5 text-right">
+                <div class="flex items-center gap-1.5 text-cyan-300 font-semibold">
+                  <i class="fa-solid fa-check text-xs"></i>
+                  <span>معاينة جزء من الفيديو قبل التسليم النهائي</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-slate-300">
+                  <i class="fa-solid fa-check text-xs text-amber-400"></i>
+                  <span>تعديلات متفق عليها حتى الرضا التام</span>
+                </div>
+              </div>
+
+              <!-- Direct WhatsApp Button with Dynamic Link -->
+              <a id="calc-send-whatsapp" href="#" target="_blank" rel="noopener noreferrer"
+                 class="btn-shimmer block w-full py-3.5 sm:py-4 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 font-black text-xs sm:text-sm shadow-xl gold-glow hover:scale-105 transition-transform duration-300">
+                <i class="fa-brands fa-whatsapp text-lg ml-1"></i>
+                <span>احجز هذا الفيديو عبر واتساب الآن</span>
+              </a>
+
+              <p class="text-[10px] sm:text-[11px] text-slate-400">سيتم فتح محادثة واتساب تلقائياً مع تفاصيل طلبك بدقة</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Comprehensive Services Section (من واقع بوسترات VYRON)
+       ========================================================================= -->
+  <section id="services" class="py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+        <span class="px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 inline-block">
+          🛠️ خدمات استوديو VYRON المتكاملة
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white">
+          بنقدملك أكثر من مجرد <span class="text-gradient-cyan">فيديو AI!</span>
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
+          من الفكرة وحتى انتشار البراند على كل المنصات، بنقدملك حلول رقمية شاملة تنقل شغلك لمستوى جديد من الاحترافية والجاذبية.
+        </p>
+      </div>
+
+      <!-- Services Grid (Responsive) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Service 1: AI Video Commercials -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-amber-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-black transition-all">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">فيديوهات إعلانية سينمائية بالـ AI</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            تحويل أفكارك ومنتجاتك إلى قصص بصرية مذهلة تجذب الزبائن وتضاعف المبيعات، سواء إعلان لبراندك أو فيلم وثائقي أو محتوى ترويجي.
+          </p>
+          <div class="text-xs text-amber-400 font-semibold flex items-center gap-1.5">
+            <span>جودة 4K فائقة الوضوح</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+        <!-- Service 2: Cinematic Editing & VFX -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-cyan-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">مونتاج احترافي ومؤثرات بصرية (VFX)</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            تأثيرات بصرية تضفي طابعاً سينمائياً، هندسة صوتية وتأثيرات SFX قوية، مع هوك تشد المشاهد من أول 3 ثوانٍ وخاتمة باللوجو.
+          </p>
+          <div class="text-xs text-cyan-400 font-semibold flex items-center gap-1.5">
+            <span>إيقاع ومؤثرات صوتية تشد الانتباه</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+        <!-- Service 3: Social Media Management -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-pink-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 text-pink-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-chart-line-up"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">إدارة حساباتك ومحتواك</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            خطة نشر محتوى احترافية على فيسبوك وتيك توك وإنستجرام، بأسعار تنافسية بهدف زيادة التفاعل الحقيقي وجلب عملاء مستهدفين لمنتجك.
+          </p>
+          <div class="text-xs text-pink-400 font-semibold flex items-center gap-1.5">
+            <span>خليك رقم 1 على السوشيال ميديا</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+        <!-- Service 4: Web Development & Landing Pages -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-indigo-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">مواقع إلكترونية ومتاجر لعرض شغلك</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            تصميم صفحات هبوط ومواقع سريعة وجذابة زي الموقع ده تعرض منتجاتك وتقوي ثقة العملاء في براندك وتسهل طلبات الشراء أوتوماتيكياً.
+          </p>
+          <div class="text-xs text-indigo-400 font-semibold flex items-center gap-1.5">
+            <span>موقع يعرض شغلك ويقوي براندك</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+        <!-- Service 5: Branding & Visual Identity -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-amber-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-black transition-all">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">بناء براند وهوية بصرية متكاملة</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            تصميم شعارات احترافية ثلاثية الأبعاد ولوحات ألوان وخطوط ومواد دعائية مطبوعة ورقمية تخلق انطباعاً بالفخامة والريادة.
+          </p>
+          <div class="text-xs text-amber-400 font-semibold flex items-center gap-1.5">
+            <span>هوية ترسخ في ذهن عميلك</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+        <!-- Service 6: Google SEO & Growth -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-emerald-400/50 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-black transition-all">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <h3 class="text-lg sm:text-xl font-black text-white mb-2.5">تحسين ظهورك على Google</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+            إعداد ملف نشاطك التجاري على جوجل Google Business وتحسين محركات البحث SEO والإعلانات الممولة عشان عميلك يلاقيك أول ما يبحث عن مجالك.
+          </p>
+          <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
+            <span>ظهور في النتائج الأولى</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       The 5-Step Production Workflow (Responsive Grid)
+       ========================================================================= -->
+  <section class="py-14 sm:py-20 bg-slate-950/80 border-y border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-16 space-y-2.5 sm:space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20 inline-block">
+          ⚡ خطوات سهلة ومباشرة
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          إزاي بنحول فكرتك <span class="text-gradient-gold">لواقع سينمائي؟</span>
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm">عملية تنفيذ واضحة، بدون تعقيدات وبأعلى معايير الدقة</p>
+      </div>
+
+      <!-- Steps Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 text-center">
+        
+        <!-- Step 1 -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-white/10 relative">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-amber-500 text-black font-black text-base sm:text-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg gold-glow">
+            1
+          </div>
+          <h4 class="font-bold text-white text-sm sm:text-base mb-1.5">إرسال الفكرة</h4>
+          <p class="text-[11px] sm:text-xs text-slate-400 leading-relaxed">ابعتلنا تفاصيل منتجك أو فكرتك عبر واتساب أو صفحة الفيسبوك.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-white/10 relative">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-cyan-500 text-black font-black text-base sm:text-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg cyan-glow">
+            2
+          </div>
+          <h4 class="font-bold text-white text-sm sm:text-base mb-1.5">السيناريو والستوري بورد</h4>
+          <p class="text-[11px] sm:text-xs text-slate-400 leading-relaxed">بنصيغ سكريبت إعلاني قوي ومبتكر يشد المشاهد من أول ثانية.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-white/10 relative">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-indigo-500 text-white font-black text-base sm:text-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg">
+            3
+          </div>
+          <h4 class="font-bold text-white text-sm sm:text-base mb-1.5">توليد المشاهد بالـ AI</h4>
+          <p class="text-[11px] sm:text-xs text-slate-400 leading-relaxed">توليد لقطات سينمائية بدقة 4K تناسب تفاصيل منتجك بأحدث النماذج.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-white/10 relative">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-pink-500 text-white font-black text-base sm:text-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg">
+            4
+          </div>
+          <h4 class="font-bold text-white text-sm sm:text-base mb-1.5">المونتاج والمؤثرات</h4>
+          <p class="text-[11px] sm:text-xs text-slate-400 leading-relaxed">إضافة الـ Sound FX والموسيقى والانتقالات السينمائية والهوك واللوجو.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="glass-panel-gold p-5 sm:p-6 rounded-2xl border border-amber-500/40 relative sm:col-span-2 lg:col-span-1">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full bg-emerald-500 text-black font-black text-base sm:text-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg">
+            5
+          </div>
+          <h4 class="font-bold text-emerald-300 text-sm sm:text-base mb-1.5">المعاينة والتسليم</h4>
+          <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">بتشوف جزء من الفيديو وتطلب أي تعديلات قبل الاستلام النهائي 4K!</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Showcase Gallery & Official Posters Section (معرض البوسترات والأعمال)
+       ========================================================================= -->
+  <section id="showcase" class="py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-3 sm:space-y-4">
+        <span class="px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 border border-amber-400/20 inline-block">
+          📸 هوية وأعمال استوديو VYRON
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white">
+          معرض البوسترات <span class="text-gradient-gold">والأعمال الرسمية</span>
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
+          اضغط على أي بوستر لتكبيره واستعراض تفاصيله بجودة فائقة، أو تصفح أنواع الفيديوهات اللي بنقدمها لعملائنا.
+        </p>
+      </div>
+
+      <!-- Posters Interactive Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+        
+        <!-- Poster 1: Logo & Studio Identity -->
+        <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 hover:border-amber-400/60 transition-all duration-500 group shadow-2xl">
+          <div class="relative aspect-square overflow-hidden cursor-pointer" 
+               data-lightbox-src="assets/vyron-logo.jpg"
+               data-lightbox-caption="شعار وهيكل استوديو VYRON AI & Digital Studio الرسمي">
+            <img src="assets/vyron-logo.jpg" alt="VYRON Official Logo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 sm:p-6">
+              <div>
+                <span class="text-[10px] sm:text-[11px] font-bold text-amber-400 bg-amber-400/20 px-2.5 py-0.5 sm:py-1 rounded-md">الشعار الرسمي</span>
+                <h4 class="text-base sm:text-lg font-black text-white mt-1.5">VYRON Studio Emblem</h4>
+                <p class="text-[11px] sm:text-xs text-slate-300">Turning Ideas Into Digital Reality</p>
+              </div>
+            </div>
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center opacity-80 sm:opacity-0 group-hover:opacity-100 transition-opacity">
+              <i class="fa-solid fa-magnifying-glass-plus text-xs sm:text-sm"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-5 text-right">
+            <p class="text-[11px] sm:text-xs text-slate-400">الهوية البصرية الفاخرة للاستوديو بمزيج من الذهبي والأزرق الكوني.</p>
+          </div>
+        </div>
+
+        <!-- Poster 2: 4K AI Video & Guarantee -->
+        <div class="glass-panel-gold rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all duration-500 group shadow-2xl">
+          <div class="relative aspect-square overflow-hidden cursor-pointer" 
+               data-lightbox-src="assets/poster-4k-video.jpg"
+               data-lightbox-caption="بوستر فيديو الذكاء الاصطناعي 4K - Your Idea Our Video">
+            <img src="assets/poster-4k-video.jpg" alt="4K Video Poster" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 sm:p-6">
+              <div>
+                <span class="text-[10px] sm:text-[11px] font-bold text-black bg-amber-400 px-2.5 py-0.5 sm:py-1 rounded-md">عرض خاص 4K</span>
+                <h4 class="text-base sm:text-lg font-black text-white mt-1.5">من فكرة إلى فيديو احترافي 4K</h4>
+                <p class="text-[11px] sm:text-xs text-slate-300">معاينة قبل التسليم النهائي</p>
+              </div>
+            </div>
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center opacity-80 sm:opacity-0 group-hover:opacity-100 transition-opacity">
+              <i class="fa-solid fa-magnifying-glass-plus text-xs sm:text-sm"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-5 text-right">
+            <p class="text-[11px] sm:text-xs text-slate-300">سواء إعلان لبراندك، فيلم أو قصة.. بنقدملك أكثر من مجرد فيديو AI.</p>
+          </div>
+        </div>
+
+        <!-- Poster 3: Social Media Growth -->
+        <div class="glass-panel-cyan rounded-3xl overflow-hidden border border-cyan-500/40 hover:border-cyan-400 transition-all duration-500 group shadow-2xl">
+          <div class="relative aspect-square overflow-hidden cursor-pointer" 
+               data-lightbox-src="assets/poster-social-media.jpg"
+               data-lightbox-caption="بوستر السوشيال ميديا والتسويق - خليك رقم 1 على السوشيال ميديا">
+            <img src="assets/poster-social-media.jpg" alt="Social Media Growth Poster" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 sm:p-6">
+              <div>
+                <span class="text-[10px] sm:text-[11px] font-bold text-black bg-cyan-400 px-2.5 py-0.5 sm:py-1 rounded-md">السوشيال ميديا #1</span>
+                <h4 class="text-base sm:text-lg font-black text-white mt-1.5">خليك رقم 1 على السوشيال ميديا</h4>
+                <p class="text-[11px] sm:text-xs text-slate-300">إدارة حسابات • تسويق • نمو</p>
+              </div>
+            </div>
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center opacity-80 sm:opacity-0 group-hover:opacity-100 transition-opacity">
+              <i class="fa-solid fa-magnifying-glass-plus text-xs sm:text-sm"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-5 text-right">
+            <p class="text-[11px] sm:text-xs text-slate-300">حلول متكاملة لبناء البراند وموقع الويب وتحسين الظهور على Google.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Filterable Video Concepts Examples -->
+      <div class="p-5 sm:p-8 rounded-3xl glass-panel border border-white/10">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 sm:mb-8">
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-white">نماذج وأنواع الفيديوهات اللي بنفذها</h3>
+            <p class="text-[11px] sm:text-xs text-slate-400">فيديوهات مصممة بأعلى تقنيات المونتاج والـ AI لكل المجالات</p>
+          </div>
+
+          <!-- Filter Tabs (Horizontal Scrollable on Mobile) -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 no-scrollbar">
+            <button class="sample-filter-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs font-bold transition bg-gradient-to-r from-amber-500 to-amber-600 text-black active-tab" data-filter="all">الكل</button>
+            <button class="sample-filter-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs font-bold transition bg-white/5 text-slate-300 hover:text-white" data-filter="products">إعلانات منتجات</button>
+            <button class="sample-filter-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs font-bold transition bg-white/5 text-slate-300 hover:text-white" data-filter="reels">ريلز وسوشيال ميديا</button>
+            <button class="sample-filter-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs font-bold transition bg-white/5 text-slate-300 hover:text-white" data-filter="cinematic">قصص وسينما AI</button>
+          </div>
+        </div>
+
+        <!-- Sample Cards Grid (Responsive 1 -> 2 -> 4 cols) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Sample 1 -->
+          <div class="sample-card p-3.5 sm:p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-amber-400/40 transition" data-category="products">
+            <div class="aspect-video rounded-xl bg-slate-900 mb-3 flex items-center justify-center relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-amber-950/80 to-slate-900/90 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-bottle-droplet text-2xl sm:text-3xl"></i>
+              </div>
+              <span class="absolute top-2 right-2 text-[10px] bg-black/60 px-2 py-0.5 rounded text-amber-400 font-bold">عطور ومستحضرات</span>
+            </div>
+            <h5 class="font-bold text-xs sm:text-sm text-white">إعلان سينمائي لعطور فاخرة</h5>
+            <p class="text-[11px] text-slate-400 mt-1">توليد قطرات الماء والإضاءة الذهبية والانعكاسات الواقعية بالـ AI.</p>
+          </div>
+
+          <!-- Sample 2 -->
+          <div class="sample-card p-3.5 sm:p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-amber-400/40 transition" data-category="products">
+            <div class="aspect-video rounded-xl bg-slate-900 mb-3 flex items-center justify-center relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-red-950/80 to-slate-900/90 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-burger text-2xl sm:text-3xl"></i>
+              </div>
+              <span class="absolute top-2 right-2 text-[10px] bg-black/60 px-2 py-0.5 rounded text-red-400 font-bold">مطاعم وكافيهات</span>
+            </div>
+            <h5 class="font-bold text-xs sm:text-sm text-white">إعلانات وجبات وبرجر مشوي</h5>
+            <p class="text-[11px] text-slate-400 mt-1">دخان طازج ونار وتفاصيل شهية تجوع المشاهد وتدفعه للطلب فوراً.</p>
+          </div>
+
+          <!-- Sample 3 -->
+          <div class="sample-card p-3.5 sm:p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-cyan-400/40 transition" data-category="reels">
+            <div class="aspect-video rounded-xl bg-slate-900 mb-3 flex items-center justify-center relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950/80 to-slate-900/90 flex items-center justify-center text-cyan-400">
+                <i class="fa-brands fa-tiktok text-2xl sm:text-3xl"></i>
+              </div>
+              <span class="absolute top-2 right-2 text-[10px] bg-black/60 px-2 py-0.5 rounded text-cyan-400 font-bold">ريلز وتيك توك</span>
+            </div>
+            <h5 class="font-bold text-xs sm:text-sm text-white">ريلز فيروسي سريع الإيقاع (Hook)</h5>
+            <p class="text-[11px] text-slate-400 mt-1">مونتاج سريع مع نصوص ملونة ومؤثرات صوتية تمنع تخطي الفيديو.</p>
+          </div>
+
+          <!-- Sample 4 -->
+          <div class="sample-card p-3.5 sm:p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-indigo-400/40 transition" data-category="cinematic">
+            <div class="aspect-video rounded-xl bg-slate-900 mb-3 flex items-center justify-center relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-950/80 to-slate-900/90 flex items-center justify-center text-indigo-400">
+                <i class="fa-solid fa-film text-2xl sm:text-3xl"></i>
+              </div>
+              <span class="absolute top-2 right-2 text-[10px] bg-black/60 px-2 py-0.5 rounded text-indigo-400 font-bold">قصص سينمائية</span>
+            </div>
+            <h5 class="font-bold text-xs sm:text-sm text-white">أفلام وثائقية وقصصية بالـ AI</h5>
+            <p class="text-[11px] text-slate-400 mt-1">عوالم خيالية وشخصيات متطورة وسرد مشوق بدقة 4K فائقة الجودة.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Direct Project Inquiry / Smart Message Form (Responsive Input Sizes)
+       ========================================================================= -->
+  <section id="contact" class="py-16 sm:py-24 relative bg-slate-950/90 border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-3 sm:space-y-4">
+        <span class="px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 inline-block">
+          📩 جاهز للتنفيذ؟
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white">
+          احكيلنا عن فكرتك.. <span class="text-gradient-gold">واحنا نتولى الباقي!</span>
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
+          املأ النموذج البسيط ده، وهيتم تحويلك مباشرة للواتساب مع رسالة جاهزة ومرتبة تبدأ بيها محادثتك مع فريق العمل فوراً.
+        </p>
+      </div>
+
+      <!-- Form Card -->
+      <div class="glass-panel rounded-3xl p-5 sm:p-10 border border-white/15 shadow-2xl relative">
+        <form id="vyron-direct-order-form" class="space-y-4 sm:space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <!-- Name Input -->
+            <div>
+              <label for="client-name" class="block text-xs sm:text-sm font-bold text-slate-200 mb-2">اسمك أو اسم شركتك / البراند:</label>
+              <div class="relative">
+                <input type="text" id="client-name" required placeholder="مثال: أحمد محمد / براند فلورنس" 
+                       class="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-900/90 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 text-sm">
+                <i class="fa-solid fa-user absolute left-4 top-3.5 sm:top-4 text-slate-500"></i>
+              </div>
+            </div>
+
+            <!-- Service Choice -->
+            <div>
+              <label for="client-service" class="block text-xs sm:text-sm font-bold text-slate-200 mb-2">نوع الخدمة المطلوبة:</label>
+              <div class="relative">
+                <select id="client-service" 
+                        class="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-900/90 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm appearance-none">
+                  <option value="فيديو إعلاني لمنتج أو مشروع">فيديو إعلاني لمنتج أو مشروع بالذكاء الاصطناعي</option>
+                  <option value="مونتاج ريلز وتيك توك سريع">مونتاج ريلز وتيك توك احترافي</option>
+                  <option value="باقة PREMIUM السينمائية 4K">باقة PREMIUM السينمائية 4K</option>
+                  <option value="إدارة حسابات ومحتوى السوشيال ميديا">إدارة حسابات ومحتوى السوشيال ميديا والتسويق</option>
+                  <option value="بناء براند كامل وموقع إلكتروني">بناء براند كامل وموقع إلكتروني</option>
+                  <option value="استفسار عام أو فكرة أخرى">استفسار عام أو فكرة أخرى</option>
+                </select>
+                <i class="fa-solid fa-chevron-down absolute left-4 top-3.5 sm:top-4 text-slate-500 text-xs pointer-events-none"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Budget / Package Choice -->
+          <div>
+            <label for="client-budget" class="block text-xs sm:text-sm font-bold text-slate-200 mb-2">الباقة المفضلة أو الميزانية التقريبية:</label>
+            <div class="relative">
+              <select id="client-budget" 
+                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-900/90 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm appearance-none">
+                <option value="الباقة الاحترافية (250 جنيه للدقيقة)">الباقة الاحترافية (250 جنيه للدقيقة)</option>
+                <option value="باقة PREMIUM الفاخرة (500 جنيه للدقيقة)" selected>باقة PREMIUM الفاخرة (500 جنيه للدقيقة) 👑</option>
+                <option value="باقة شهرية مستمرة للسوشيال ميديا">باقة شهرية مستمرة للسوشيال ميديا والمحتوى</option>
+                <option value="أريد عرض سعر مخصص حسب فكرتي">أريد عرض سعر مخصص حسب فكرتي</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute left-4 top-3.5 sm:top-4 text-slate-500 text-xs pointer-events-none"></i>
+            </div>
+          </div>
+
+          <!-- Idea Textarea -->
+          <div>
+            <label for="client-idea" class="block text-xs sm:text-sm font-bold text-slate-200 mb-2">احكيلنا باختصار عن فكرتك أو المنتج اللي عايز تروّج له:</label>
+            <textarea id="client-idea" rows="3" placeholder="مثال: عندي براند ملابس / عطور وعايز فيديو مدته دقيقة يظهر تفاصيل المنتج بشكل سينمائي وألوان جذابة مع تعليق صوتي..." 
+                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-900/90 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 text-sm"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" 
+                  class="btn-shimmer w-full py-3.5 sm:py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-3 shadow-xl hover:scale-105 transition-transform duration-300">
+            <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
+            <span>إرسال تفاصيل فكرتي فوراً عبر واتساب</span>
+          </button>
+
+          <!-- Privacy & Facebook Note -->
+          <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 pt-2 gap-2 text-center sm:text-right">
+            <span class="flex items-center gap-1.5">
+              <i class="fa-solid fa-lock text-emerald-400"></i>
+              <span>محادثة مباشرة مع أستاذ أمير على: 01098021457</span>
+            </span>
+            <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1">
+              <i class="fa-brands fa-facebook"></i>
+              <span>أو تواصل عبر رسائل صفحة الفيسبوك</span>
+            </a>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FAQ Section (الأسئلة الشائعة)
+       ========================================================================= -->
+  <section id="faq" class="py-14 sm:py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14 space-y-2.5 sm:space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20 inline-block">
+          ❓ كل ما يهمك معرفته
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          الأسئلة <span class="text-gradient-gold">الشائعة</span>
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm">إجابات واضحة ومباشرة لأبرز استفسارات عملائنا الكرام</p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="space-y-3 sm:space-y-4">
+        
+        <!-- Q1 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden transition">
+          <button class="faq-question w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-white text-xs sm:text-base hover:text-amber-400 transition">
+            <span>إزاي بيتم ضمان الرضا قبل الاستلام النهائي؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-xs text-slate-400"></i>
+          </button>
+          <div class="faq-answer hidden px-4 sm:px-5 pb-4 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            من أهم مميزاتنا في VYRON إنك <strong class="text-amber-400">بتشوف جزء من الفيديو الأول (عينة تجريبية)</strong>، ولو عندك أي ملاحظة أو تعديل بنتفق عليه ونعدله فوراً قبل اعتماد التسليم النهائي لدقة 4K.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden transition">
+          <button class="faq-question w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-white text-xs sm:text-base hover:text-amber-400 transition">
+            <span>هل لازم أكون مصور لقطات لمنتجي ولا الذكاء الاصطناعي بيعمل كل حاجة؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-xs text-slate-400"></i>
+          </button>
+          <div class="faq-answer hidden px-4 sm:px-5 pb-4 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            بنقدر نشتغل بالطريقتين: لو عندك صور واضحة لمنتجك بنستخدمها ونحولها لمشاهد حية ومتحركة، ولو معندكش بنقدر نولّد بيئات ومجسمات كاملة بالذكاء الاصطناعي بدقة 4K واقعية للغاية تناسب طبيعة الفكرة.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden transition">
+          <button class="faq-question w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-white text-xs sm:text-base hover:text-amber-400 transition">
+            <span>كام يوم يستغرق تنفيذ الفيديو وتسليمه؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-xs text-slate-400"></i>
+          </button>
+          <div class="faq-answer hidden px-4 sm:px-5 pb-4 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            التسليم العادي بيكون خلال 2 إلى 4 أيام عمل حسب طول الفيديو وكمية المؤثرات. وعندنا أيضاً خيار <strong class="text-cyan-400">التسليم فائق السرعة خلال 24 - 48 ساعة</strong> لو عندك حملة مستعجلة.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden transition">
+          <button class="faq-question w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-white text-xs sm:text-base hover:text-amber-400 transition">
+            <span>ما هي طرق الدفع المتاحة داخل مصر وخارجها؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-xs text-slate-400"></i>
+          </button>
+          <div class="faq-answer hidden px-4 sm:px-5 pb-4 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            نوفر أسهل وأأمن وسائل الدفع: فودافون كاش (Vodafone Cash)، إنستاباي (InstaPay)، تحويل بنكي، ويسترن يونيون أو PayPal للعملاء من خارج مصر.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden transition">
+          <button class="faq-question w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-white text-xs sm:text-base hover:text-amber-400 transition">
+            <span>هل تقدمون إدارة كاملة للحسابات ونشر الفيديوهات؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-xs text-slate-400"></i>
+          </button>
+          <div class="faq-answer hidden px-4 sm:px-5 pb-4 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+            نعم بالتأكيد! كما هو موضح في بوستر استوديو VYRON "خليك رقم 1 على السوشيال ميديا"، نقدم باقات إدارة حسابات شهرية تشمل صناعة المحتوى، جدولة المنشورات، تحسين التفاعل، والردود والإعلانات الممولة.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer Section (Mobile Bottom Safe Area)
+       ========================================================================= -->
+  <footer class="bg-slate-950 border-t border-white/10 pt-12 pb-24 sm:pb-12 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10">
+        
+        <!-- Col 1: Brand & Slogan -->
+        <div class="space-y-3.5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-amber-500 p-0.5">
+              <img src="assets/vyron-logo.jpg" alt="VYRON Studio Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+              <span class="text-xl sm:text-2xl font-black text-gradient-gold">VYRON</span>
+              <span class="block text-[9px] sm:text-[10px] tracking-widest text-cyan-400 uppercase font-readex">AI & Digital Studio</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            🎬 إنت عليك الفكرة.. وإحنا علينا نخليها فيلم! استوديو رائد متخصص في صناعة فيديوهات الذكاء الاصطناعي 4K، المونتاج السينمائي، وإدارة السوشيال ميديا والتسويق.
+          </p>
+          <div class="text-[11px] sm:text-xs text-amber-400 font-bold">
+            #مونتاج #تصميم_فيديو #صناعة_المحتوى #إعلانات #الذكاء_الاصطناعي
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="font-bold text-white text-xs sm:text-sm mb-3 sm:mb-4 border-b border-white/10 pb-2">روابط سريعة</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a href="#hero" class="hover:text-amber-400 transition">الرئيسية</a></li>
+            <li><a href="#pricing" class="hover:text-amber-400 transition">باقات الأسعار (250ج / 500ج)</a></li>
+            <li><a href="#calculator" class="hover:text-amber-400 transition">حاسبة تكلفة الفيديو</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition">خدمات الميديا والتسويق</a></li>
+            <li><a href="#showcase" class="hover:text-amber-400 transition">معرض البوسترات والأعمال</a></li>
+            <li><a href="#faq" class="hover:text-amber-400 transition">الأسئلة الشائعة والضمان</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Pricing Summary -->
+        <div>
+          <h4 class="font-bold text-white text-xs sm:text-sm mb-3 sm:mb-4 border-b border-white/10 pb-2">باقاتنا الأساسية</h4>
+          <div class="space-y-2.5 text-xs text-slate-300">
+            <div class="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/5">
+              <strong class="text-amber-400 block font-bold">الباقة الاحترافية</strong>
+              <span>تبدأ من 250 جنيه للدقيقة للمونتاج والتنسيق</span>
+            </div>
+            <div class="p-2 sm:p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+              <strong class="text-amber-300 block font-bold">👑 باقة PREMIUM (500 ج/د)</strong>
+              <span>جودة 4K، مؤثرات بصرية وصوتية، هوك ولوجو</span>
+            </div>
+            <div class="p-2 sm:p-2.5 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
+              <strong class="text-cyan-300 block font-bold">إدارة السوشيال ميديا</strong>
+              <span>خطط شهرية لزيادة التفاعل والمبيعات</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact & Channels -->
+        <div>
+          <h4 class="font-bold text-white text-xs sm:text-sm mb-3 sm:mb-4 border-b border-white/10 pb-2">تواصل معنا مباشرة</h4>
+          <div class="space-y-2.5 text-xs text-slate-300">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/201098021457" target="_blank" class="flex items-center gap-2.5 p-2 sm:p-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 transition">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <div>
+                <span class="block font-bold text-[11px] sm:text-xs">واتساب / اتصال مباشر:</span>
+                <span class="font-mono text-xs sm:text-sm tracking-wider">01098021457</span>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" class="flex items-center gap-2.5 p-2 sm:p-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/30 text-blue-300 transition">
+              <i class="fa-brands fa-facebook-f text-base"></i>
+              <div>
+                <span class="block font-bold text-[11px] sm:text-xs">الصفحة الرسمية على الفيسبوك:</span>
+                <span class="text-[10px] sm:text-[11px] underline">اضغط لمتابعة أحدث أعمالنا</span>
+              </div>
+            </a>
+
+            <div class="text-[10px] sm:text-[11px] text-slate-400 pt-1">
+              🚀 تابعنا لتكون دائمًا مع كل جديد في عالم الإبداع الرقمي وصناعة المحتوى بالذكاء الاصطناعي.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="border-t border-white/10 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] sm:text-xs text-slate-500 gap-3 text-center sm:text-right">
+        <div>
+          جميع الحقوق محفوظة &copy; <span id="current-year">2026</span> <strong class="text-slate-300">VYRON AI & Digital Studio</strong>.
+        </div>
+        <div class="flex items-center gap-2 justify-center">
+          <span>Turning Ideas Into Digital Reality</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span class="text-amber-400 font-bold">01098021457</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Floating Action Buttons (WhatsApp & Facebook Quick Contacts - Responsive)
+       ========================================================================= -->
+  <div class="fixed floating-contacts-wrapper left-3.5 sm:left-6 z-50 flex flex-col gap-2.5 sm:gap-3">
+    
+    <!-- Floating Facebook -->
+    <a href="https://www.facebook.com/share/1DuUP39vz7/" target="_blank" rel="noopener noreferrer" 
+       class="w-11 h-11 sm:w-13 sm:h-13 p-2.5 sm:p-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 border border-blue-400/40 group relative"
+       title="تابع صفحتنا على فيسبوك">
+      <i class="fa-brands fa-facebook-f text-base sm:text-xl"></i>
+      <span class="hidden sm:inline-block absolute left-full ml-3 px-3 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-white text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+        صفحتنا على فيسبوك 🌐
+      </span>
+    </a>
+
+    <!-- Floating WhatsApp Main Action -->
+    <a href="https://wa.me/201098021457?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%A3%D9%85%D9%8A%D8%B1%20%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%B9%D9%86%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D8%A9%20%D9%81%D9%8A%20VYRON." 
+       target="_blank" rel="noopener noreferrer" 
+       class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-2xl flex items-center justify-center transition-transform hover:scale-110 border-2 border-emerald-300 gold-glow group relative animate-bounce"
+       title="تواصل معنا فوراً على واتساب">
+      <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+      <span class="hidden sm:inline-block absolute left-full ml-3 px-3 py-1.5 rounded-lg bg-slate-900 border border-emerald-500/40 text-emerald-300 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">
+        تحدث معنا الآن على واتساب 💬
+      </span>
+    </a>
+
+  </div>
+
+  <!-- =========================================================================
+       Image Lightbox Modal (Responsive Fullscreen)
+       ========================================================================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex flex-col items-center justify-center p-3 sm:p-4">
+    <button id="lightbox-close" aria-label="إغلاق المعاينة" class="absolute top-4 left-4 sm:top-6 sm:left-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white hover:text-amber-400 text-2xl flex items-center justify-center z-10 transition">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="max-w-4xl max-h-[85vh] w-full flex flex-col items-center justify-center">
+      <img id="lightbox-image" src="" alt="Enlarged Poster Preview" class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl border border-white/20">
+      <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-200 mt-3 sm:mt-4 text-center font-semibold bg-black/70 px-4 py-2 rounded-xl border border-white/10 max-w-lg"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
